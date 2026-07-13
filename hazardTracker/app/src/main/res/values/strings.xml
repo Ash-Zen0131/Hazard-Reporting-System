@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">HazardTracker</string>
+    <string name="zoom_in">+</string>
+    <string name="zoom_out">−</string>
+</resources>

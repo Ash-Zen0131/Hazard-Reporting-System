@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "464300573063",
+    "project_id": "known-hazard-reporting-s-25b6d",
+    "storage_bucket": "known-hazard-reporting-s-25b6d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:464300573063:android:88a75aceb12b22795c1322",
+        "android_client_info": {
+          "package_name": "com.example.hazardtracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCE2Jsv06z1P11s-fNLXzV_snwpMZ41OOc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

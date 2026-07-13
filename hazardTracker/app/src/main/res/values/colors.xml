@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand purple -->
+    <color name="purple_primary">#6A1B9A</color>
+    <color name="purple_primary_dark">#4A148C</color>
+    <color name="purple_light">#9C4DCC</color>
+
+    <!-- Light theme -->
+    <color name="background_light">#FDF7FF</color>
+    <color name="surface_light">#FFFFFF</color>
+    <color name="text_primary_light">#1C1B1F</color>
+    <color name="text_secondary_light">#757575</color>
+
+    <!-- Dark theme -->
+    <color name="background_dark">#1C1B1F</color>
+    <color name="surface_dark">#2B2930</color>
+    <color name="text_primary_dark">#E6E1E5</color>
+    <color name="text_secondary_dark">#B0B0B0</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>
