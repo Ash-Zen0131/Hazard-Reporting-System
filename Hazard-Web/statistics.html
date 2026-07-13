@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Hazard Statistics</title>
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="app-layout">
+
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <h2>Hazard System</h2>
+        <p>Admin Dashboard</p>
+      </div>
+
+      <nav class="sidebar-nav">
+        <a href="index.html">Dashboard</a>
+        <a href="hazards.html">Hazards</a>
+        <a class="active" href="statistics.html">Statistics</a>
+        <a href="about.html">About</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+
+      <header class="topbar">
+        <div>
+          <h1>Hazard Statistics</h1>
+          <p>Live category analysis from Cloud Firestore</p>
+        </div>
+        <button
+          id="themeToggle"
+          class="btn btn-outline-dark"
+          type="button"
+        >
+          🌙 Dark Mode
+        </button>
+      </header>
+
+      <section class="container-fluid py-4">
+
+        <div class="row g-4 mb-4">
+
+          <div class="col-12 col-md-6 col-xl-3">
+            <div class="dashboard-card">
+              <div class="card-icon">📋</div>
+              <div>
+                <p>Total Reports</p>
+                <h2 id="totalReports">0</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-3">
+            <div class="dashboard-card">
+              <div class="card-icon">📍</div>
+              <div>
+                <p>Total Locations</p>
+                <h2 id="totalLocations">0</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-3">
+            <div class="dashboard-card">
+              <div class="card-icon">🕒</div>
+              <div>
+                <p>Latest Report</p>
+                <h2 id="latestReport" class="statistics-date">-</h2>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-3">
+            <div class="dashboard-card">
+              <div class="card-icon">🏆</div>
+              <div>
+                <p>Most Common</p>
+                <h2 id="mostCommonCategory" class="statistics-date">-</h2>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div id="loadingMessage" class="alert alert-secondary">
+          Loading statistics...
+        </div>
+
+        <div id="errorMessage"></div>
+
+        <div class="row g-4">
+
+          <div class="col-12 col-xl-6">
+            <section class="content-card chart-card">
+              <h2>Hazards by Category</h2>
+              <p>Distribution of all submitted hazard reports</p>
+
+              <div class="chart-wrapper">
+                <canvas id="categoryPieChart"></canvas>
+              </div>
+            </section>
+          </div>
+
+          <div class="col-12 col-xl-6">
+            <section class="content-card chart-card">
+              <h2>Category Comparison</h2>
+              <p>Number of reports for each hazard category</p>
+
+              <div class="chart-wrapper">
+                <canvas id="categoryBarChart"></canvas>
+              </div>
+            </section>
+          </div>
+
+        </div>
+
+      </section>
+
+    </main>
+
+  </div>
+  <script src="js/theme.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script type="module" src="js/statistics.js"></script>
+
+</body>
+</html>
